@@ -61,7 +61,7 @@ const HomePage = () => {
 
   return (
     <div className="flex justify-center items-center">
-      <div className="flex flex-col space-y-2 bg-purple-400 p-5 rounded-lg w-2/5">
+      <div className="flex flex-col space-y-2 bg-purple-400 p-5 rounded-lg md:w-2/5">
         <SelectTopic topic={topic} setSentiment={setSentiment} setTopic={setTopic} />
         <Company setSentiment={setSentiment} company={topic} comments={comments} />
         <div className="relative">

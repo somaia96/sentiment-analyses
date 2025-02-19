@@ -46,7 +46,7 @@ const Login = () => {
 
     return (
         <div className="h-screen flex container items-center justify-center">
-            <div className="flex rounded-lg w-1/2">
+            <div className="flex rounded-lg w-full sm:w-1/2">
                 <Toaster />
                 <form className='w-full bg-white p-10 space-y-5 rounded-xl'
                     onSubmit={handleSubmit(onSubmit)}

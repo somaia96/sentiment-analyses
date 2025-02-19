@@ -14,14 +14,14 @@ const NavBar = () => {
 
     return (
         <nav className="bg-purple-400 text-white w-full">
-            <div className="container py-4 flex justify-between items-center">
+            <div className="container py-2 flex justify-between items-center">
                 <Link to={"/"} >
-                    <h2 className="text-xl font-semibold hover:bg-[#ffffff1f] p-2 rounded-lg">P/N Comments</h2>
+                    <h2 className="flex gap-2 text-xl font-semibold hover:bg-[#ffffff1f] p-2 rounded-lg">P/N <span className="hidden md:block">Comments</span></h2>
                 </Link>
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center space-x-0 sm:space-x-2">
                     {getToken() ? <>
                         <Link to={"/profile"} >
-                            <h2 className="flex items-center hover:bg-[#ffffff1f] p-2 rounded-lg gap-2 font-bold text-lg">Somaia <UserIcon width={40} height={40} className="bg-purple-500 rounded-full p-2" /> </h2>
+                            <h2 className="flex items-center hover:bg-[#ffffff1f] sm:p-2 rounded-lg gap-2 font-bold text-lg">Somaia <UserIcon width={40} height={40} className="bg-purple-500 rounded-full p-2" /> </h2>
                         </Link>
                         <h2 className="hover:bg-[#ffffff1f] p-2 rounded-lg" onClick={logOutHandler} >
                             LogOut

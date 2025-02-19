@@ -18,11 +18,9 @@ interface IProps {
 const Company = ({ company, comments,setSentiment }: IProps) => {
     return (
         <div>
-            <div className="my-3 h-40 flex justify-center items-center overflow-hidden">
+            <div className="my-3 h-auto md:h-40 flex justify-center items-center overflow-hidden">
                 <img
                     src={company.image} 
-                    // src="images/company.png"
-
                     alt={company.name}
                     className="object-cover h-full w-auto" />
             </div>
